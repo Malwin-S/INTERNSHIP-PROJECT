@@ -1,19 +1,27 @@
 # INTERNSHIP-PROJECT
 
 🏥 Healthcare Appointment No-Show Prediction
+
 📌 Project Overview
-This project aims to predict whether a patient will show up for their scheduled medical appointment using machine learning. Missed appointments (no-shows) cost healthcare systems time and money, and predictive analytics can be used to optimize scheduling and improve efficiency.
+
+This project aims to predict whether a patient will show up for their scheduled medical appointment using machine learning. 
+Missed appointments (no-shows) cost healthcare systems time and money, and predictive analytics can be used to optimize scheduling and improve efficiency.
 
 We use Python (with scikit-learn, pandas) to build the predictive model.
 
 🎯 Objective
+
 Predict no-show appointments based on patient demographics and appointment details.
 Identify key factors influencing no-shows (age, SMS reminders, weekday, etc.).
+
 🛠️ Tools & Technologies
+
 Language: Python
 Libraries: pandas, scikit-learn, matplotlib, seaborn
 Development Environment: Jupyter Notebook
+
 📁 Dataset
+
 appointments.csv
 Contains appointment data with features such as:
 Patient ID
@@ -22,28 +30,35 @@ Gender, Age
 SMS received
 Health conditions
 No-show status
+
 📌 Note: Data cleaning involved removing negative ages and incorrect date values.
 
 🧠 Model Development
+
 1. Data Preprocessing
 Cleaned dataset: removed invalid entries
 Encoded categorical variables
 Engineered new features:
 waiting_days between scheduled and appointment date
 age_group and appointment_weekday
+
 2. EDA (Exploratory Data Analysis)
 Analyzed trends:
 Age vs No-show
 SMS reminders vs No-show
 Appointment day impact
+
 3. Model Training
 Used a Decision Tree Classifier
 Applied GridSearchCV for hyperparameter tuning
+
 4. Evaluation
 Assessed with accuracy and classification report
 Visualized confusion matrix
+
 5. Individual Prediction
 Function to test model on a single user input
+
 📄 Report
 A detailed PDF report includes:
 
